@@ -9,6 +9,7 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+
     emailjs.sendForm('service_81mctuj', 'template_m2vdczs', e.target, 'wFmLhQsVMlZbkFufV')
       .then((result) => {
         console.log(result.text);
@@ -25,7 +26,14 @@ function ContactForm() {
   const handleBlur = (e) => {
     if (e.target.value === '') {
       alert(`${e.target.name} is required`);
+    } else if (e.target.name === 'email' && !validateEmail(e.target.value)) {
+      alert('Please enter a valid email address');
     }
+  };
+
+  const validateEmail = (email) => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
   };
 
   return (
