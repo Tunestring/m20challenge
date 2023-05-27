@@ -19,7 +19,7 @@ function ContactForm() {
         // Handle any errors and show an error message to the user
       });
     
-      e.target.reset();
+    e.target.reset();
     // Reset the form fields after submission
     setName('');
     setEmail('');
@@ -28,7 +28,7 @@ function ContactForm() {
 
   return (
     <div className="container">
-      <h1 className='text-color text-center pt-5'>Contact Me</h1>
+      <h1 className="text-color text-center pt-5">Contact Me</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -39,7 +39,7 @@ function ContactForm() {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            required
+            required // Added required attribute
           />
         </div>
         <div className="mb-3">
@@ -63,7 +63,7 @@ function ContactForm() {
             rows="5"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            required
+            required 
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
