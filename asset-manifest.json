@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/m20challenge/static/css/main.c4de84bc.css",
-    "main.js": "/m20challenge/static/js/main.ef0a6535.js",
+    "main.js": "/m20challenge/static/js/main.a2ebbc9e.js",
     "static/media/Hot10.png": "/m20challenge/static/media/Hot10.f9328c7cc1772105c9d3.png",
     "static/media/InNeed.png": "/m20challenge/static/media/InNeed.2c055f08314920a23b84.png",
     "static/media/SocialNetworkAPI.png": "/m20challenge/static/media/SocialNetworkAPI.8987a73ba7265ed9b810.png",
@@ -10,10 +10,10 @@
     "static/media/NoteTaker.png": "/m20challenge/static/media/NoteTaker.a70947b7817995d732fb.png",
     "index.html": "/m20challenge/index.html",
     "main.c4de84bc.css.map": "/m20challenge/static/css/main.c4de84bc.css.map",
-    "main.ef0a6535.js.map": "/m20challenge/static/js/main.ef0a6535.js.map"
+    "main.a2ebbc9e.js.map": "/m20challenge/static/js/main.a2ebbc9e.js.map"
   },
   "entrypoints": [
     "static/css/main.c4de84bc.css",
-    "static/js/main.ef0a6535.js"
+    "static/js/main.a2ebbc9e.js"
   ]
 }
