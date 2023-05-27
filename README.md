@@ -2,8 +2,6 @@
 
 ## Description
 
-React Portfolio
-
 This project was done with React, it operates as a single-page application. This project uses HTML, CSS, React, and EmailJS.
 
 ## Table of Contents
@@ -12,7 +10,6 @@ This project was done with React, it operates as a single-page application. This
 - [License](#license)
 - [Screenshot](#screenshot)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
@@ -38,10 +35,6 @@ This project uses the MIT license.
 ## Contributing
 
 Helpful e-mails or tips to make this project work better are ALWAYS appreciated. Even helpful criticism would be warmly welcomed. Special shoutout to my classmates, TA, and instructor for making this project achievable. Also a huge thank you to my tutors, dozens of docs read, videos watched and all who have help make this project understandable and make the logic and reasoning digestable. 
-
-## Tests
-
-No tests written for this project.
 
 ## Questions
 
