@@ -9,21 +9,23 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Use your EmailJS service ID, template ID, and user ID
     emailjs.sendForm('service_81mctuj', 'template_m2vdczs', e.target, 'wFmLhQsVMlZbkFufV')
       .then((result) => {
         console.log(result.text);
-        // Optionally, you can show a success message or redirect the user
       }, (error) => {
         console.error(error.text);
-        // Handle any errors and show an error message to the user
       });
     
     e.target.reset();
-    // Reset the form fields after submission
     setName('');
     setEmail('');
     setMessage('');
+  };
+
+  const handleBlur = (e) => {
+    if (e.target.value === '') {
+      alert(`${e.target.name} is required`);
+    }
   };
 
   return (
@@ -39,7 +41,8 @@ function ContactForm() {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            required // Added required attribute
+            onBlur={handleBlur}
+            required
           />
         </div>
         <div className="mb-3">
@@ -51,6 +54,7 @@ function ContactForm() {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onBlur={handleBlur}
             required
           />
         </div>
@@ -63,7 +67,8 @@ function ContactForm() {
             rows="5"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            required 
+            onBlur={handleBlur}
+            required
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
