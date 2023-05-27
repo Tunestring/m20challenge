@@ -1,0 +1,55 @@
+body {
+  font-family: 'Times New Roman', sans-serif;
+}
+.background {
+  background-color: #DBE9F4;
+}
+
+.text-color {
+  color: #305F87;
+}
+
+.nav-text {
+  color: #B1D4E0;
+}
+
+.navbar-bg {
+  background-color: #305F87;
+}
+
+.card-img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.profile-image {
+  width: 200px;
+  height: auto;
+  margin: 30px auto;
+}
+
+.custom-border {
+  border-left: 2px solid #305F87;
+}
+
+.indent {
+  display: inline-block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.link-text {
+  color: #B1D4E0;
+}
+
+.navbar-nav .nav-link.link-text.active,
+.navbar-nav .nav-link.link-text:focus {
+  color: #B1D4E0 !important;
+}
+
+.nav-link {
+  color: black !important;
+}
