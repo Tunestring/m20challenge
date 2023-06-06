@@ -1,7 +1,7 @@
 {
   "name": "Murse Code",
   "version": "0.1.0",
-  "homepage": "mursecode.com",
+  "homepage": "https://www.tunestring.github.io/m20challenge",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
