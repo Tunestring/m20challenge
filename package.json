@@ -1,7 +1,7 @@
 {
-  "name": "React-Portfolio",
+  "name": "Murse Code",
   "version": "0.1.0",
-  "homepage": "https://tunestring.github.io/m20challenge/",
+  "homepage": "mursecode.com",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
