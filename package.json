@@ -1,7 +1,7 @@
 {
   "name": "Murse Code",
   "version": "0.1.0",
-  "homepage": "mursecode.com",
+  "homepage": "https://mursecode.com",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
