@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mursecode.com/static/css/main.c4de84bc.css",
-    "main.js": "/mursecode.com/static/js/main.7b5490a0.js",
-    "static/media/Hot10.png": "/mursecode.com/static/media/Hot10.f9328c7cc1772105c9d3.png",
-    "static/media/InNeed.png": "/mursecode.com/static/media/InNeed.2c055f08314920a23b84.png",
-    "static/media/SocialNetworkAPI.png": "/mursecode.com/static/media/SocialNetworkAPI.8987a73ba7265ed9b810.png",
-    "static/media/WorkDayPlanner.png": "/mursecode.com/static/media/WorkDayPlanner.651b2b426b08a490deaa.png",
-    "static/media/PWA.png": "/mursecode.com/static/media/PWA.18fe49ef1c861a6c68d6.png",
-    "static/media/NoteTaker.png": "/mursecode.com/static/media/NoteTaker.a70947b7817995d732fb.png",
-    "index.html": "/mursecode.com/index.html",
-    "main.c4de84bc.css.map": "/mursecode.com/static/css/main.c4de84bc.css.map",
-    "main.7b5490a0.js.map": "/mursecode.com/static/js/main.7b5490a0.js.map"
+    "main.css": "/static/css/main.c4de84bc.css",
+    "main.js": "/static/js/main.cbcfa831.js",
+    "static/media/Hot10.png": "/static/media/Hot10.f9328c7cc1772105c9d3.png",
+    "static/media/InNeed.png": "/static/media/InNeed.2c055f08314920a23b84.png",
+    "static/media/SocialNetworkAPI.png": "/static/media/SocialNetworkAPI.8987a73ba7265ed9b810.png",
+    "static/media/WorkDayPlanner.png": "/static/media/WorkDayPlanner.651b2b426b08a490deaa.png",
+    "static/media/PWA.png": "/static/media/PWA.18fe49ef1c861a6c68d6.png",
+    "static/media/NoteTaker.png": "/static/media/NoteTaker.a70947b7817995d732fb.png",
+    "index.html": "/index.html",
+    "main.c4de84bc.css.map": "/static/css/main.c4de84bc.css.map",
+    "main.cbcfa831.js.map": "/static/js/main.cbcfa831.js.map"
   },
   "entrypoints": [
     "static/css/main.c4de84bc.css",
-    "static/js/main.7b5490a0.js"
+    "static/js/main.cbcfa831.js"
   ]
 }
