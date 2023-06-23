@@ -1,11 +1,12 @@
 import React from 'react';
 import '../../styles.css';
+import profilePic from '../../assets/images/me.jpg';
 
 function AboutMe() {
   return (
     <div className="container d-flex flex-column align-items-center text-center">
       <img
-        src="https://tunestring.github.io/m2challenge/assets/me.jpg"
+        src={profilePic}
         alt="Profile"
         className="profile-image rounded-circle"
       />
