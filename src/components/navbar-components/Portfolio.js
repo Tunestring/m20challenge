@@ -9,57 +9,64 @@ import SocialNetworkAPI from '../../assets/images/SocialNetworkAPI.png';
 import '../../styles.css';
 
 function Portfolio() {
+  const projects = [
+    {
+      name: 'Work Day Planner',
+      imageSrc: WorkDayPlanner,
+      languages: ['JavaScript', 'HTML', 'CSS', 'Node.js'],
+      githubLink: 'https://github.com/Tunestring/m11challenge'
+    },
+    {
+      name: 'Hot 10',
+      imageSrc: Hot10,
+      languages: ['HTML', 'CSS','Node.js'],
+      githubLink: 'https://github.com/bcebel/Hot10'
+    },
+    {
+      name: 'In Need',
+      imageSrc: InNeed,
+      languages: ['JavaScript', 'MongoDB', 'Express', 'Node.js'],
+      githubLink: 'https://github.com/Cmeesh11/InNeed'
+    },
+    {
+      name: 'Note Taker',
+      imageSrc: NoteTaker,
+      languages: ['JavaScript', 'Node.js', 'Express', 'HTML', 'CSS'],
+      githubLink: 'https://github.com/Tunestring/m11challenge'
+    },
+    {
+      name: 'PWA',
+      imageSrc: PWA,
+      languages: ['JavaScript', 'HTML', 'CSS'],
+      githubLink: 'https://github.com/Tunestring/m19challenge'
+    },
+    {
+      name: 'Social Network API',
+      imageSrc: SocialNetworkAPI,
+      languages: ['JavaScript', 'MongoDB', 'Express', 'Mongoose']
+    }
+  ];
+
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h1 className="text-color my-4 mt-5 text-center text-nowrap">Work Day Planner</h1>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/Tunestring/m11challenge" className="card-link">
-              <Card imageSrc={WorkDayPlanner} />
+        {projects.map((project, index) => (
+          <div key={index} className="col-lg-4 col-md-6 mb-4">
+            <a href={project.githubLink} className="card-link">
+              <div className="card-wrapper">
+                <h2 className="project-name">{project.name}</h2>
+                <Card imageSrc={project.imageSrc} />
+                <div className="overlay">
+                  <div className="languages">
+                    {project.languages.map((language, index) => (
+                      <span key={index}>{language}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </a>
           </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h1 className="text-color my-4 mt-5 text-center text-nowrap">Hot 10</h1>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/bcebel/Hot10" className="card-link">
-              <Card imageSrc={Hot10} />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h1 className="text-color my-4 mt-5 text-center text-nowrap">In Need</h1>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/Cmeesh11/InNeed" className="card-link">
-              <Card imageSrc={InNeed} />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h1 className="text-color my-4 mt-5 text-center text-nowrap">Note Taker</h1>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/Tunestring/m11challenge" className="card-link">
-              <Card imageSrc={NoteTaker} />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h2 className="text-color my-4 mt-5 text-center text-nowrap">PWA</h2>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/Tunestring/m19challenge" className="card-link">
-              <Card imageSrc={PWA} />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4">
-          <h2 className="text-color my-4 mt-5 text-center text-nowrap">Social Network API</h2>
-          <div className="d-flex justify-content-center">
-            <a href="https://github.com/Tunestring/m18challenge" className="card-link">
-              <Card imageSrc={SocialNetworkAPI} />
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
