@@ -25,7 +25,7 @@ function Footer() {
 
   return (
     <div className="d-flex justify-content-center mt-5">
-      <a href="https://www.linkedin.com/in/nate-long-94987a269/" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/nateklong/" target="_blank" rel="noreferrer">
         <i className="fa fa-linkedin-square mx-2" style={styles.iconSize}></i>
       </a>
       <a
